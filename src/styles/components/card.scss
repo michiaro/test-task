@@ -1,0 +1,75 @@
+@import "../shared/globals.scss";
+
+.card {
+  display: block;
+  box-sizing: border-box;
+  border: 1px solid #d8d8d8;
+  background-color: $color-background--contrast;
+  margin-bottom: 1em;
+  color: $color-text;
+  text-decoration: none;
+  transition: 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+
+  @include from("md") {
+    width: 32%;
+  }
+
+  @include from("xl") {
+    width: auto;
+    margin-bottom: 1.3em;
+  }
+
+  &:hover {
+    box-shadow: 0px 5px 11px 0px rgba(123, 123, 123, 0.37);
+  }
+
+  &__picture {
+    position: relative;
+  }
+  &__image {
+    display: block;
+    width: 100%;
+
+    @include from("xl") {
+      width: auto;
+    }
+  }
+  &__category {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 8px 10px 5px 10px;
+    color: $color-text--contrast;
+    font-weight: bold;
+    background-color: $color-primary;
+    font-size: 12px;
+    line-height: 16px;
+
+    &--contrast {
+      background-color: $color-secondary;
+    }
+  }
+  &__description {
+    padding: 20px 20px 17px;
+  }
+  &__title {
+    margin: 0 0 2px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+  }
+  &__address {
+    margin-bottom: 15px;
+  }
+  &__price {
+    margin-bottom: 7px;
+
+    &--bold {
+      font-weight: bold;
+    }
+  }
+  &__other-details {
+    font-size: 14px;
+    line-height: 19px;
+  }
+}

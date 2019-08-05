@@ -1,0 +1,54 @@
+@import "../shared/globals.scss";
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: $color-text;
+  overflow-y: scroll;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.container {
+  width: 90%;
+  max-width: 90%;
+  margin: 0 auto;
+
+  @include from("xl") {
+    width: 1180px;
+    max-width: 1180px;
+  }
+}
+
+.developments {
+  padding: 25px 0 50px;
+
+  &__heading {
+    text-align: center;
+    margin-bottom: 1em;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 49px;
+    color: $color-text--primary;
+  }
+
+  &__layout {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    
+    @include from("md") {
+      justify-content: space-between;
+    }
+  }
+
+  &__button {
+    text-align: center;
+  }
+
+  &__message {
+    margin: 50px 0 50px;
+    text-align: center;
+    font-size: 28px;
+    line-height: 30px;
+  }
+}

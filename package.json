@@ -1,0 +1,17 @@
+{
+  "name": "test_fuse8",
+  "version": "1.0.0",
+  "main": "index.html",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "devDependencies": {
+    "cssnano": "^4.1.10",
+    "sass": "^1.22.9"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}

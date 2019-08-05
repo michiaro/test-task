@@ -1,0 +1,48 @@
+@import "../shared/globals.scss";
+
+.button {
+  $block: &;
+
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 50px auto 0;
+  padding: 12px 33px;
+  border: 1px solid #d8d8d8;
+  border-radius: 25px;
+  color: $color-text;
+  background-color: $color-background;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.3px;
+  cursor: pointer;
+  transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+
+  &__text {
+    position: relative;
+    margin-right: 8px;
+  }
+  &__chevron {
+    display: inline-block;
+    height: 18px;
+    transition: 0.4s cubic-bezier(0, 0, 0.2, 1);
+  }
+
+  &:hover {
+    background-color: $color-primary;
+    color: $color-text--contrast;
+
+    #{$block}__chevron {
+      transform: translateX(10px);
+
+      path {
+        stroke: $color-text--contrast;
+      }
+    }
+  }
+
+  &:active {
+    background-color: $color-primaty--active;
+  }
+}
