@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Тестовое задание Fuse8 Junior</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/main.scss">
   </head>
   <body>
     <div class="container">
@@ -15,7 +16,7 @@
         </h1>
 
         <div class="developments__layout">
-          <a class="card js-card" href="/">
+          <a class="card" href="/" data-visible="true">
             <div class="card__picture">
               <img src="img/brunleescourt.jpg" alt="Brunlees Court" class="card__image" />
               <div class="card__category">Independent living</div>
@@ -40,7 +41,7 @@
             </div>
           </a>
 
-          <a class="card js-card" href="/">
+          <a class="card" href="/" data-visible="true">
             <div class="card__picture">
               <img src="img/charlotte.jpg" alt="Charlotte Court" class="card__image" />
               <div class="card__category">Independent living</div>
@@ -65,7 +66,7 @@
             </div>
           </a>
 
-          <a class="card js-card" href="/">
+          <a class="card" href="/" data-visible="true">
             <div class="card__picture">
               <img src="img/grove.jpg" alt="Grove Court" class="card__image" />
               <div class="card__category card__category--contrast">Restaurant & Support available</div>
@@ -90,7 +91,7 @@
             </div>
           </a>
 
-          <a href="/" class="card js-card" style="display: none;">
+          <a href="/" class="card" data-visible="false">
             <div class="card__picture">
               <img src="img/charlotte.jpg" alt="Charlotte Court" class="card__image" />
               <div class="card__category">Independent living</div>
@@ -115,7 +116,7 @@
             </div>
           </a>
 
-          <a href="/" class="card js-card" style="display: none;">
+          <a href="/" class="card" data-visible="false">
             <div class="card__picture">
               <img src="img/brunleescourt.jpg" alt="Brunlees Court" class="card__image" />
               <div class="card__category">Independent living</div>
@@ -140,7 +141,7 @@
             </div>
           </a>
 
-          <a href="/" class="card js-card" style="display: none;">
+          <a href="/" class="card" data-visible="false">
             <div class="card__picture">
               <img src="img/grove.jpg" alt="Grove Court" class="card__image" />
               <div class="card__category card__category--contrast">Restaurant & Support available</div>
@@ -165,7 +166,7 @@
             </div>
           </a>
 
-          <a href="/" class="card js-card" style="display: none;">
+          <a href="/" class="card" data-visible="false">
             <div class="card__picture">
               <img src="img/grove.jpg" alt="Grove Court" class="card__image" />
               <div class="card__category card__category--contrast">Restaurant & Support available</div>
@@ -190,7 +191,7 @@
             </div>
           </a>
 
-          <a href="/" class="card js-card" style="display: none;">
+          <a href="/" class="card" data-visible="false">
             <div class="card__picture">
               <img src="img/brunleescourt.jpg" alt="Brunlees Court" class="card__image" />
               <div class="card__category">Independent living</div>
@@ -215,7 +216,157 @@
             </div>
           </a>
 
-          <a href="/" class="card js-card" style="display: none;">
+          <a href="/" class="card" data-visible="false">
+            <div class="card__picture">
+              <img src="img/charlotte.jpg" alt="Charlotte Court" class="card__image" />
+              <div class="card__category">Independent living</div>
+            </div>
+
+            <div class="card__description">
+              <h2 class="card__title">
+                Charlotte Court
+              </h2>
+              <div class="card__address">
+                19-23 Cambridge Road
+              </div>
+              <div class="card__price">
+                New Properties for Sale from
+                <span class="card__price--bold">
+                  £214,999
+                </span>
+              </div>
+              <div class="card__other-details">
+                Shared Ownership Available
+              </div>
+            </div>
+          </a>
+
+          <a href="/" class="card" data-visible="false">
+            <div class="card__picture">
+              <img src="img/charlotte.jpg" alt="Charlotte Court" class="card__image" />
+              <div class="card__category">Independent living</div>
+            </div>
+
+            <div class="card__description">
+              <h2 class="card__title">
+                Charlotte Court
+              </h2>
+              <div class="card__address">
+                19-23 Cambridge Road
+              </div>
+              <div class="card__price">
+                New Properties for Sale from
+                <span class="card__price--bold">
+                  £214,999
+                </span>
+              </div>
+              <div class="card__other-details">
+                Shared Ownership Available
+              </div>
+            </div>
+          </a>
+
+          <a href="/" class="card" data-visible="false">
+            <div class="card__picture">
+              <img src="img/brunleescourt.jpg" alt="Brunlees Court" class="card__image" />
+              <div class="card__category">Independent living</div>
+            </div>
+
+            <div class="card__description">
+              <h2 class="card__title">
+                Brunlees Court
+              </h2>
+              <div class="card__address">
+                19-23 Cambridge Road
+              </div>
+              <div class="card__price">
+                New Properties for Sale from
+                <span class="card__price--bold">
+                  £214,999
+                </span>
+              </div>
+              <div class="card__other-details">
+                Shared Ownership Available
+              </div>
+            </div>
+          </a>
+
+          <a href="/" class="card" data-visible="false">
+            <div class="card__picture">
+              <img src="img/grove.jpg" alt="Grove Court" class="card__image" />
+              <div class="card__category card__category--contrast">Restaurant & Support available</div>
+            </div>
+
+            <div class="card__description">
+              <h2 class="card__title">
+                Grove Court
+              </h2>
+              <div class="card__address">
+                19-23 Cambridge Road
+              </div>
+              <div class="card__price">
+                New Properties for Sale from
+                <span class="card__price--bold">
+                  £214,999
+                </span>
+              </div>
+              <div class="card__other-details">
+                Shared Ownership Available
+              </div>
+            </div>
+          </a>
+
+          <a href="/" class="card" data-visible="false">
+            <div class="card__picture">
+              <img src="img/grove.jpg" alt="Grove Court" class="card__image" />
+              <div class="card__category card__category--contrast">Restaurant & Support available</div>
+            </div>
+
+            <div class="card__description">
+              <h2 class="card__title">
+                Grove Court
+              </h2>
+              <div class="card__address">
+                19-23 Cambridge Road
+              </div>
+              <div class="card__price">
+                New Properties for Sale from
+                <span class="card__price--bold">
+                  £214,999
+                </span>
+              </div>
+              <div class="card__other-details">
+                Shared Ownership Available
+              </div>
+            </div>
+          </a>
+
+          <a href="/" class="card" data-visible="false">
+            <div class="card__picture">
+              <img src="img/brunleescourt.jpg" alt="Brunlees Court" class="card__image" />
+              <div class="card__category">Independent living</div>
+            </div>
+
+            <div class="card__description">
+              <h2 class="card__title">
+                Brunlees Court
+              </h2>
+              <div class="card__address">
+                19-23 Cambridge Road
+              </div>
+              <div class="card__price">
+                New Properties for Sale from
+                <span class="card__price--bold">
+                  £214,999
+                </span>
+              </div>
+              <div class="card__other-details">
+                Shared Ownership Available
+              </div>
+            </div>
+          </a>
+
+          <a href="/" class="card" data-visible="false">
             <div class="card__picture">
               <img src="img/charlotte.jpg" alt="Charlotte Court" class="card__image" />
               <div class="card__category">Independent living</div>

@@ -8,7 +8,7 @@
   margin-bottom: 1em;
   color: $color-text;
   text-decoration: none;
-  transition: 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 
   @include from("md") {
     width: 32%;
@@ -21,6 +21,10 @@
 
   &:hover {
     box-shadow: 0px 5px 11px 0px rgba(123, 123, 123, 0.37);
+  }
+
+  &[data-visible="false"] {
+    display: none;
   }
 
   &__picture {
